@@ -1,5 +1,5 @@
-#include "ctfolder.h"
-#include "ctffmpeg.h"
+#include "ctfolder.hpp"
+#include "ctffmpeg.hpp"
 
 CtFfmpeg *ff;
 

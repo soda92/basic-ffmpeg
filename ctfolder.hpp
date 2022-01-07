@@ -6,7 +6,11 @@ using std::endl;
 using std::string;
 #include <ctime>
 #include <sstream>
+
+#include <fstream>
+#include <cstdlib>
 #include <filesystem>
+namespace fs = std::filesystem;
 
 class videoRecorder
 {
@@ -30,7 +34,7 @@ public:
         std::stringstream ss;
         ss << calendar_time.tm_year << '-' << calendar_time.tm_mon << '-' << calendar_time.tm_mday;
 
-        return !(std::filesystem::create_directory(ss.str()));
+        return !(fs::create_directory(ss.str()));
     };
 
     std::string update_filename()

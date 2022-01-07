@@ -1,4 +1,4 @@
-#include "ctffmpeg.h"
+#include "ctffmpeg.hpp"
 
 CtFfmpeg::CtFfmpeg() {
     in_filename = new char [1024];

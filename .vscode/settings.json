@@ -47,6 +47,9 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xutility": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "sstream": "cpp",
+        "chrono": "cpp",
+        "fstream": "cpp"
     }
 }
