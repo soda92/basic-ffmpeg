@@ -3,18 +3,21 @@
 
 CtFfmpeg *ff;
 
+#include <fmt/core.h>
+
 int main(int argc, char **argv)
 {
 
-    if (argc < 2)
-    {
-        printf("usage: %s <RTSP link>  \n", argv[0]);
-        return 1;
-    }
+    // if (argc < 2)
+    // {
+    //     printf("usage: %s <RTSP link>  \n", argv[0]);
+    //     return 1;
+    // }
 
     ff = new CtFfmpeg();
 
-    ff->in_filename = argv[1]; //RTSP input link
+    // ff->in_filename = argv[1]; //RTSP input link
+    ff->in_filename = "rtsp://admin:hk123456@192.168.104.72:554/Streaming/Channels/101";
     ff->init();
     ff->getInput();
 

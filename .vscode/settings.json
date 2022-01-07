@@ -51,5 +51,8 @@
         "sstream": "cpp",
         "chrono": "cpp",
         "fstream": "cpp"
+    },
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "D:/src/vcpkg/scripts/buildsystems/vcpkg.cmake"
     }
 }
